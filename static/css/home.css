@@ -1,0 +1,205 @@
+body {
+  height: 90%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.display1 {
+  color: whitesmoke;
+  text-shadow: 1.2px 1.2px 1px black;
+  font-size: 5em;
+}
+
+.jumbotron {
+  margin: 5em 5em;
+  background-color: lightcyan;
+  height: 11em;
+}
+
+.btn-group-xl {
+  padding: 10px;
+}
+
+.nav button {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+.main {
+  margin-top: 5px;
+  margin-left: 0px;
+  padding: 0px 10px;
+  height: 45em;
+  overflow: scroll;
+}
+
+#post-container {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#post-stats {
+  margin-left: 15px;
+}
+#post-comments-preview {
+  margin-left: 15px;
+}
+#post-caption {
+  margin-left: 15px;
+}
+#add-comment {
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 15em;
+}
+#post-comment-button {
+  margin-left: 15px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+#weather-card {
+
+  background-size: cover;
+  border-radius: 20px;
+  height: 400px;
+  box-shadow: 0px 8px 16px 4px #9e9e9e;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.gallery-block .heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.gallery-block .heading h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+  overflow: hidden;
+  margin-bottom: 0;
+  /* background: black; */
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+@media (min-width: 576px) {
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+
+
+
+.corners {
+    background: #FFF;
+    height: 500px;
+    margin: 50px auto;
+    max-width: 400px;
+    line-height:25px;
+    position: relative;
+    width: 80%;
+    font-family:arial; font-size:14px; font-weight:bold; padding:10px; padding-top:40px;
+    -webkit-box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+       -moz-box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+            box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+    background: #e6e6e6;
+    content: '';
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    -webkit-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+       -moz-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+            box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+}
+.corners:after {
+    left: -50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.corners:before {
+    right: -50px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}

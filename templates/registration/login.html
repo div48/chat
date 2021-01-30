@@ -1,0 +1,38 @@
+{% extends 'registration/base.html' %}
+{% block content %}
+
+
+  <input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
+  <input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+
+
+  <form class="form form--login framed" action="login" method="post">
+{%  csrf_token %}
+      <h1 style="font-family: fantasy;text-align: center;color: forestgreen">Edutech</h1>
+    <input type="text" placeholder="Username"  name="your_name" class="input input--top" />
+
+    <input type="password" placeholder="Password"  name="your_pass" class="input" />
+    <input type="submit" value="Log in" class="input input--submit" />
+
+    <label for="toggle--signup" class="text text--small text--centered">New? <b>Sign up</b></label>
+  </form>
+
+  <form class="form form--signup framed" action="signup" method="post">
+{%  csrf_token %}
+       <h1 style="font-family: fantasy;text-align: center;color: forestgreen">Edutech</h1>
+
+
+    <input type="email" placeholder="Email"  name="email"  class="input input--top" />
+       <input type="text" placeholder="Username"  name="your_name" class="input" />
+    <input type="password" placeholder="Password"  name="your_pass"  class="input" />
+
+    <input type="submit" value="Sign up" class="input input--submit" />
+
+    <label for="toggle--login" class="text text--small text--centered">Not new? <b>Log in</b></label>
+  </form>
+  <div class="fullscreen-bg"></div>
+
+
+  {% endblock %}
+
+

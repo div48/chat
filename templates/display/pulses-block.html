@@ -1,0 +1,123 @@
+{% extends 'display/crops_base.html' %}
+{% load bootstrap3 %}
+{% load static  %}
+{% block mycss %} <style>
+#slideshow {
+  font-family: Open Sans, sans-serif;
+  width:700px;
+  height:300px;
+  overflow:hidden;
+  border:10px solid;
+  border-top-color:#856036;
+  border-left-color:#5d4426;
+  border-bottom-color:#856036;
+  border-right-color:#5d4426;
+  position:relative;
+}
+figure, figcaption {
+  position: absolute;
+}
+figure:nth-child(1) {
+  animation: nextSlide 16s 12s infinite;
+}
+figure:nth-child(2) {
+  animation: nextSlide 16s 8s infinite;
+}
+figure:nth-child(3) {
+  animation: nextSlide 16s 4s infinite;
+}
+figure:nth-child(4) {
+  animation: nextSlide 16s 0s infinite;
+}
+figcaption {
+  background: rgba(0,0,0,0.1);
+  color: red;
+    font-weight: bold;
+  padding: 0 10px;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+}
+h4 {
+  line-height: 0.1em;
+}
+p {
+  font-size: 15pt;
+  font-weight: 400;
+}
+b{
+    font-size: 15pt;
+}
+
+@keyframes nextSlide {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} </style> {% endblock %}
+{% block content %}
+    <div id="slideshow">
+  <figure>
+    <img src="{% static "images/crops/pulses1.jpg"%}" width="700" height="300" alt="Image 1">
+ <figcaption></figcaption>
+  </figure>
+  <figure>
+    <img src="{% static "images/crops/pulses2.jpg"%}" width="700" height="300" alt="Image 2">
+  <figcaption></figcaption>
+  </figure>
+  <figure>
+    <img src="{% static "images/crops/pulses1.jpg"%}" width="700" height="300" alt="Image 3">
+  <figcaption> </figcaption>
+  </figure>
+  <figure>
+    <img src="{% static "images/crops/pulses2.jpg"%}" width="700" height="300" alt="Image 4">
+  <figcaption> </figcaption>
+  </figure>
+</div>
+
+<b>About Pulses</b>
+<p> Pulses are consumed as Dal, which is a cheap source of plant protein. These are consumed because of body building
+    properties having presence of various amino acids. These also have medicinal properties. By products of pulses like
+    leaves, pod coats and bran are given to animals in the form of dry fodder. Some pulse crops like Gram, Lobia,
+    Urdbean & Moongbean are fed to animals as green fodder. Moong plants are also used as green manure which improve
+    soil health and adds nutrient into the soil.</p>
+<p>
+    A number of pulse crops are grown in India and world. Among the crops, major ones are Gram, Pigeonpea, Lentil,
+    Fieldpeas etc. According to history, the origin of Gram is in South West Asia – probably Afghanistan and Persia,
+    Pigeonpea in Africa, Lentil in Turkey to South Iran and Fieldpeas in Mediterranean Region of Southern Europe and
+    Western Asia.
+</p>
+<b>Important Major Pulses Growing Zones / States in India</b>
+<p>Varietal Development programme of pulses got strengthened in 1967 with the initiation of All-India Co-ordinated
+    Research Improvement Programme. Through this programme, the varieties suitable for across the country i.e.
+    agro-climatic zones: Northern Hills Zone – J&K, Himachal Pradesh, North West of Uttar Pradesh; North West Plain Zone
+    – Haryana, Punjab, Rajasthan, Gujarat, western Uttar Pradesh; North East Plain Zone – eastern Uttar Pradesh, Bihar,
+    West Bengal, Assam, Tripura, Mizoram, Northern Odisha; Central Zone – Madhya Pradesh, Maharashtra, Parts of
+    Karnataka, Andhra Pradesh; South Zone – Andhra Pradesh, Tamil Nadu, Kerala, Karnataka and southern Odisha have been
+    developed.</p>
+
+<b>Climate Requirement</b>
+<p>Pulse crops are cultivated in Kharif, Rabi and Zaid seasons of the Agricultural year. Rabi crops require mild cold
+    climate during sowing period, during vegetative to pod development cold climate and during maturity / harvesting
+    warm climate. Similarly, Kharif pulse crops require warm climate throughout their life from sowing to harvesting.
+    Summer pulses are habitants of warm climate. Seed is required to pass many stages to produce seed like germination,
+    seedling, vegetative, flowering, fruit setting, pod development and grain maturity / harvesting. </p>
+<b>Area, Production And Yield Of Major Pulse Crops Growing States In India</b>
+<p>There was 239 lakh ha area in India at triennium ending 2010-11, which was mainly contributed by Madhya Pradesh,
+    Rajasthan, Maharashtra, Karnataka and Uttar Pradesh. From this area, 158 lakh tonnes production of pulse was
+    received. The major contributors of this production were Madhya Pradesh, Maharashtra, Uttar Pradesh, Rajasthan and
+    Andhra Pradesh. During this period, productivity of pulses was recorded as 661 kg / ha with highest in Punjab (905
+    kg/ha), Haryana (891), Bihar (839), Uttar Pradesh (823) and West Bengal (811).</p>
+<img src="{% static "images/major_pulses_producing_states.png"%}" class="rounded img-fluid mb-4" alt="Image Error">
+{% endblock %}

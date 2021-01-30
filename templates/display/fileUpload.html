@@ -1,0 +1,30 @@
+{% extends 'display/base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+{% block content %}
+
+ <div class="abc" style="font-family: Open Sans, sans-serif;
+  width:700px;
+  height:350px;
+  overflow:hidden;
+  border:10px solid;
+  border-top-color:#856036;
+  border-left-color:#5d4426;
+  border-bottom-color:#856036;
+  border-right-color:#5d4426;
+  position:relative;
+padding: 50px;margin: 100px">
+     <a style="position: center;margin-left: 200px;color: red"><b>Upload Image</b></a>
+
+ <form action="{%url 'upload'%}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+        <div class="form-group" style="padding-left: 100px;padding-top: 20px">
+		{{ form.as_p }}
+        </div>
+		<button type="submit" style="margin-left: 100px">Upload</button>
+	</form>
+ </div>
+
+
+
+{% endblock %}

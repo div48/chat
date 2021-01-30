@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
+
+body {
+font-family: 'Fira Sans', sans-serif;
+margin: 0;
+}
+
+.top-bar {
+    padding: 10px 0;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.page-icon-container {
+    display: inline-block;
+    margin-right: 2%;
+    padding-right: 3%;
+    border-right: 2px solid #fff;
+    line-height: 32px;
+    text-align: right;
+    vertical-align: middle;
+    width: 19%;
+}
+
+.page-icon-container img {
+  vertical-align: middle;
+}
+
+.logo-container {
+    display: inline-block;
+    width: 56%;
+    vertical-align: middle;
+}
+
+.logo-container img {
+  height: 50px;
+  margin-top: 15px;
+}
+
+.menu-icon-container {
+    display: inline-block;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.menu-icon-container img {
+  vertical-align: middle;
+}
+
+.bio-container {
+  padding-top: 89px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.bio-container img {
+  display: inline-block;
+  float: left;
+  margin: 35px 20px 20px;
+  width: 85px;
+}
+
+.bio-container div {
+    height: 85px;
+    margin: 35px 15px 20px;
+}
+
+.bio-container div span {
+  display: block;
+  line-height: 22px;
+  padding: 10px 0 0;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.edit-profile {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -210px -52px;
+    float: right;
+    height: 24px;
+    position: relative;
+    top: -65px;
+    width: 24px;
+}
+
+.bio {
+  height: 75px !important;
+  margin-top: 10px !important;
+}
+
+.bio p {
+    line-height: 22px;
+}
+
+.bio a {
+  color: #000;
+}
+
+.account-stats {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 70%;
+}
+
+.account-stats div {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
+
+.account-stats div span {
+  display: block;
+}
+
+.account-stats-figure {
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.account-stats-category {
+  font-size: 14px;
+}
+
+.posts-type-row {
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 70%;
+}
+
+.posts-type-row div {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
+
+.my-posts {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -184px;
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    width: 24px;
+}
+
+.bookmarked-posts {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -156px -184px;
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    width: 24px;
+}
+
+.tagged-posts {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -210px -130px;
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    width: 24px;
+}
+
+.instagram-post-grid {
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 70%;
+}
+
+.instagram-post-grid img {
+  display: inline-block;
+  margin: 0 1% 2%;
+  width: 30%;
+}

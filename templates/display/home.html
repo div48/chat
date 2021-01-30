@@ -1,0 +1,96 @@
+{% extends 'display/base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+{% block content %}
+
+
+<div class="main">
+                    <div class="navbar">
+                        <section class="logo-section"><img style="border-radius: 100%;height: 100px" class="logo" src="data:image/png;base64,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"/>
+                                 </section>
+
+
+                            <section >
+                                <a href="{% url 'upload' %}">
+                                    <img style="padding-right: 50px" src="https://img.icons8.com/dusk/64/000000/add-image.png"/>
+                                                    </a>
+                         </section>
+                        </div>
+                        <div id="post-container" class="border rounded"  style="margin-top: 20px">
+                         {% for dect in products %}
+                            <div class="post-header">
+                               <a href="{% url 'profile' dect.imageuploader_profile %}">{{dect.imageuploader_profile.capitalize}}</a>
+                                <button class="btn" style="float: right;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                            <div id="post-content">
+
+                                    <h1></h1>
+                                    <figure>
+                                  <img src="{{dect.image.url}}" alt="Trulli" style="width:100%;">
+                                        <figcaption><b> <a href="{% url 'profile' dect.imageuploader_profile %}">{{dect.imageuploader_profile.capitalize}}</a></b> {{dect.image_caption}} </figcaption>
+
+                                </figure>
+
+                            </div>
+                            <div id="post-options">
+                                        <form action="{% url 'blogpost_like' dect.id %}" method="POST">
+                                        {% csrf_token %}
+                                        {% if post_is_liked %}
+                                        <button type="submit" name="blogpost_id" value="{{dect.id}}" class="btn btn-danger">Unlike</button>
+                                        {% else %}
+                                        <button type="submit" name="blogpost_id" value="{{dect.id}}" class="btn btn-success">Like</button>
+                                        {% endif %}
+                                         <strong class="text-secondary">{{ dect.likes }} Like </strong>
+                                      </form>
+
+                                <form action="{% url 'blogpost_comment' dect.id %}" method="POST">
+                                     {% csrf_token %}
+                                <div class="form-group" id="add-comment">
+                                    <textarea name="comment" cols="30" rows="1" class="form-control"
+                                        placeholder="Add comment..."></textarea>
+                                </div>
+                                <button id="post-comment-button" type="submit"
+                                    class="btn btn-outline-success btn-sm">Post</button>
+                            </form>
+                            </div>
+                            <a href="#" style="margin-left: 15px; color: grey;"><small>View all comments</small></a>
+                            <div id="post-comments-preview">
+                            {% for comm in comments %}
+                                {%  if comm.post == dect.id %}
+                                <div id="post-comment">
+                                    <b><a href="{% url 'profile' comm.user %}">{{ comm.user }}</a></b> {{ comm.content }}
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+
+                            </div>
+        {% endfor %}
+
+
+                </div>
+                    </div>
+
+{% endblock %}
+
+
+{% block content1 %}
+
+    <div class="card" id="weather-card" style="background-image:url('{% static "images/pexels-lisa-fotios-1107717.jpg"%}');"
+    >
+                        <h2 class="ml-auto mr-4 mt-3 mb-0">{{ weather.city }}</h2>
+                        <p class="ml-auto mr-4 mb-0 med-font">{{  weather.description }}</p>
+                        <p class="ml-auto mr-4 mb-0">Rain:{{  weather2.pre.1 }}%</p>
+                        <p class="ml-auto mr-4 mb-0">Humidity:{{  weather.humidity }}%</p>
+                        <h1 class="ml-auto mr-4 large-font">{{  weather.temperature }} C</h1>
+                        <p class="time-font mb-0 ml-4 mt-auto">{{ date.time }} <span class="sm-font">AM</span></p>
+                        <p class="ml-4 mb-4">{{ date.week }},{{ date.day }} -{{ date.month }} -{{ date.year }}</p>
+                        <a href="weather" class="badge badge-light">Weekly Weather Report</a>
+                    </div>
+{% endblock %}

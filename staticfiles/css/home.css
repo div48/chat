@@ -1,0 +1,111 @@
+body {
+  background-image: url("double-bubble-outline.png");
+  height: 90%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.display1 {
+  color: whitesmoke;
+  text-shadow: 1.2px 1.2px 1px black;
+  font-size: 5em;
+}
+
+.jumbotron {
+  background-image: url("crops.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11em;
+}
+
+.btn-group-xl {
+  padding: 10px;
+}
+
+.nav button {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+.sidenav {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.sidenav button {
+  font-size: 20px;
+}
+
+.main {
+  margin-top: 35px;
+  margin-left: 50px;
+  padding: 0px 10px;
+}
+
+#post-container {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+#post-stats {
+    margin-left: 15px;
+}
+#post-comments-preview {
+    margin-left: 15px;
+}
+#post-caption {
+    margin-left: 15px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.main .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+        width: 100%;
+  border-bottom: 2px solid #ddd;
+}
+.main .navbar .logo-section {
+  display: flex;
+  align-items: center;
+}
+.main .navbar .logo-section div {
+  align-self: stretch;
+  width: 1px;
+    height: 50px;
+
+  margin: 0 20px;
+}
+.main .navbar .icons-section .fa {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+.main .navbar .logo {
+  width: 40px;
+}
+.main .navbar .logoname {
+  width: 130px;
+}
+.main .navbar .input-search {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  outline: 0;
+}
+.main .navbar .input-search:focus {
+  text-align: left;
+}

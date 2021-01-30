@@ -1,0 +1,18 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+
+</style>
+    <link rel="stylesheet" href="{%static "css/style1.css"  %}">
+</head>
+<body>
+{#<div class="hero-image"></div>>#}
+{% block content %}
+{%  csrf_token %}
+    {% endblock %}
+</body>
+</html>
