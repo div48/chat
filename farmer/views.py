@@ -102,7 +102,7 @@ def home(request):
 
 @login_required(login_url='log')
 def weather(request):
-    send_url = "http://api.ipstack.com/check?access_key=9bf71367e3105cd39e12c27c47f93749"
+    send_url = "http://api.ipstack.com/check?access_key=your api key"
     geo_req = requests.get(send_url)
     geo_json = json.loads(geo_req.text)
     latitude = geo_json['latitude']
@@ -110,7 +110,7 @@ def weather(request):
     city = geo_json['city']
     print(city)
 
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&cnt=3&appid=98e6745c3682b89eacc6c65fe2409f6e'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&cnt=3&appid=your api key'
     city = 'Jalandhar'
     city_weather = requests.get(url.format(city)).json()
 
@@ -215,7 +215,7 @@ def signup(request):
                                 send_mail(subject, message, EMAIL_HOST_USER, [recepient], fail_silently=False)
 
                                 to = '+91' + v8
-                                client = Client('ACee71f9f754dee20316564b16bbe51ce6', '85c1a2d89d19509a948b96ac2ce35b28')
+                                client = Client('Token id', 'key')
                                 potp = otp(request)
                                 client.messages.create(
                                     body='Your verification otp is ' + potp,
