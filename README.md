@@ -23,3 +23,11 @@ Django
 ## Database
 SQLlite
 
+# Screenshots
+
+![landing](https://user-images.githubusercontent.com/52460060/106358353-be2b7b00-6331-11eb-8840-16b328eaa3e1.JPG)
+## Landing page
+
+
+
+
