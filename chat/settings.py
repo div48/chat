@@ -139,14 +139,10 @@ EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'divsingh201@gmail.com'
-EMAIL_HOST_PASSWORD = '8054882775'
+EMAIL_HOST_USER = 'you remail@gmail.com'
+EMAIL_HOST_PASSWORD = 'Password'
 
-# # 06d506s_ZfQLpu6gFBYwuw8BUaamaKyBgP4Ue-HX  twilio  recovery code
-# TWILIO_ACCOUNT_SID = os.getenv("ACee71f9f754dee20316564b16bbe51ce6")
-# TWILIO_AUTH_TOKEN = os.getenv("491d9fb9cd03700b4db21288d1fe3b62")
-# TWILIO_NUMBER = os.getenv("+12059648218")
+# #
 SMS_BROADCAST_TO_NUMBERS = [
-    "+918054882775",
-    "+919877189505",
+  
 ]
