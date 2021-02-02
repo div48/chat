@@ -11,6 +11,13 @@ User Credentials are verified using OTPs.
 Routes are protected to prevent unauthorized access.
 
 
+# Deploy
+#### $ pip install -r requirements.txt 
+#### $ cd info
+#### $ python manage.py makemigrations
+#### $ python manage.py migrate
+#### $ python manage.py runserver 
+
 # Technologies Used
 ## Frontend 
 Html
